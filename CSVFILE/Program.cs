@@ -1,4 +1,5 @@
-﻿using CSVFILE.Models;
+﻿using CSVFILE.IServices;
+using CSVFILE.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,6 +10,10 @@ namespace CSVFILE
 {
     class Program
     {
+        public Program()
+        {
+
+        }
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
@@ -64,7 +69,7 @@ namespace CSVFILE
                     //    Console.WriteLine("{0} {1} {2}", item.Product, item.ProductCode, item.Price);
                     //}
                     Console.WriteLine("Data Saved Successfully");
-                    
+
                 }
             }
             else
